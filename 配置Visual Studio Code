@@ -13,19 +13,19 @@
 三.自定义Python运行版本，设置tab代替4个空格，指定扩展名文件不显示：File -> perference ->User Setting
 // Place your settings in this file to overwrite the default settings
 {
-  "python.pythonPath": "python3",    // 指定Python运行版本，若只有一个版本则直接写python
-  "python.linting.outputWindow": "Python3",   //指定Python运行版本
-  "python.formatting.outputWindow": "Python3",   // 指定Python运行版本
-   "editor.tabSize": 4,    //Tab键替代4个空格
-   "editor.insertSpaces": true,  //Tab键替代4个空格
-   "editor.renderWhitespace": true,    //将空格可视化 
-    "draw_white_space": "all",    //将空格可视化
-  "files.exclude": {    //指定不显示在项目数中的格式
-        "**/.git": true,    //不显示.git文件
-        "**/.DS_Store": true,    //不显示.DS_Store文件
-        "*.pyc": true,    //不显示.pyc文件
-        "*.pyo" : true,    //不显示.pyo文件
-        "__pycache__" : true    //不显示__pycache__文件
+		"python.pythonPath": "python3",    // 指定Python运行版本，若只有一个版本则直接写python
+		"python.linting.outputWindow": "Python3",   //指定Python运行版本
+		"python.formatting.outputWindow": "Python3",   // 指定Python运行版本
+		"editor.tabSize": 4,    //Tab键替代4个空格
+		"editor.insertSpaces": true,  //Tab键替代4个空格
+		"editor.renderWhitespace": true,    //将空格可视化 
+		"draw_white_space": "all",    //将空格可视化
+		"files.exclude": {    //指定不显示在项目数中的格式
+				"**/.git": true,    //不显示.git文件
+				"**/.DS_Store": true,    //不显示.DS_Store文件
+				"*.pyc": true,    //不显示.pyc文件
+				"*.pyo" : true,    //不显示.pyo文件
+				"__pycache__" : true    //不显示__pycache__文件
   }
 }
      事实上所有需要自定义的地方，都在File -> perference ->User Setting 里面，从setting.json的左侧点击笔型图标复制到设置然后修改即可
