@@ -1,0 +1,103 @@
+------------------------------------------- 视频脚本0.1 -------------------------------------------
+
+import os
+i=256
+
+while(i==256):
+    i = os.system( "you-get html")
+
+print('下载完成')
+
+------------------------------------------- 视频脚本0.2 -------------------------------------------
+
+import os
+
+video = 'http://video.tudou.com/v/XMTcyOTM1MzY4MA==.html?spm=a2hzp.8253869.0.0'
+DownHtml = 'you-get ' + video
+i=256
+
+while(i==256):
+    i = os.system( DownHtml)
+
+ print('下载完成')
+
+------------------------------------------- 视频脚本0.3 -------------------------------------------
+
+import os
+
+video = 'http://video.tudou.com/v/XMTcxMTcxNTU4NA==.html?spm=a2hzp.8253869.0.0'
+
+#拼接下载shell命令
+DownHtml = 'you-get ' + video
+
+#定义尝试下载次数，最多允许下次100次
+DownCount = 0
+
+#定义shell命令返回值，下载完成返回0，下载失败或中断返回256
+ReturnNum = 256
+
+while(ReturnNum == 256):
+    if(DownCount == 100):
+        print('100次都没下完，也尽力了')
+        break
+    else:
+        DownCount = DownCount + 1
+        print('第' + str(DownCount) + '次尝试下载')
+        ReturnNum = os.system( DownHtml)
+
+print('撸完一遍了')
+
+ ------------------------------------------- 视频脚本0.4 -------------------------------------------
+
+import os
+
+print('当前所在工作目录:' + os.getcwd())
+#DownLoadFile = input("你希望的操作目录: ")
+DownLoadFile = '/Users/will/Downloads/比邻学堂'
+#切换至操作目录
+os.chdir(DownLoadFile)
+print('切换后的工作目录:' + os.getcwd())
+
+#打开文件
+DownHtmls = open("DownLoadList.txt")
+
+#遍历下载列表
+for DownHtml in DownHtmls:
+    
+    #定义shell命令返回值，下载完成返回0，下载失败或中断返回256
+    ReturnNum = 256
+    #定义尝试下载次数，最多允许下次100次
+    DownCount = 0
+
+    while(ReturnNum == 256):
+        if(DownCount == 100):
+            print('100次都没下完，也尽力了')
+            break
+        else:
+            DownCount = DownCount + 1
+            print('第' + str(DownCount) + '次尝试下载')
+            ReturnNum = os.system('you-get ' + DownHtml)
+
+print('撸完一遍了')
+
+#关闭文件
+DownHtmls.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
