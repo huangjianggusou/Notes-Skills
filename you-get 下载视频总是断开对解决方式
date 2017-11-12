@@ -23,7 +23,7 @@ while(i==256):
 
 ------------------------------------------- 视频脚本0.3 -------------------------------------------
 
-#下载单个视频后视频列表
+#下载单个视频或视频列表
 
 import os
 
@@ -31,6 +31,7 @@ video = 'http://video.tudou.com/v/XMTcxMTcxNTU4NA==.html?spm=a2hzp.8253869.0.0'
 
 #拼接下载shell命令
 DownHtml = 'you-get ' + video
+#DownHtml = 'you-get -x 127.0.0.1:1087 ' + video
 
 #定义尝试下载次数，最多允许下次100次
 DownCount = 0
