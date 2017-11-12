@@ -1,2 +1,2 @@
 # huangjianggusou.github.io
-博客
+will的个人博客
