@@ -1,0 +1,15 @@
+安装itchat源 https://github.com/littlecodersh/ItChat
+pip3 install itchat
+
+
+
+import itchat
+from itchat.content import *
+
+itchat.auto_login(hotReload=True)
+
+@itchat.msg_register(TEXT)
+def text_reply(msg):
+    return '手机没带，急事请打电话'
+
+itchat.run()
